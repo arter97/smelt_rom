@@ -11,6 +11,10 @@ if busybox pgrep e4defrag > /dev/null; then
   echo "charge.sh: previous run didn't finish yet"
   exit 1
 fi
+
+if [[ $(busybox cat /sys/class/power_supply/max170xx_battery/status) != "Charging" ]]; then
+  exit 1
+fi
 echo "chsh" > /sys/power/wake_lock
 
 busybox sync
