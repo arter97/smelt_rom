@@ -1,0 +1,3 @@
+#!/system/bin/sh
+
+echo adb > /sys/power/wake_unlock
