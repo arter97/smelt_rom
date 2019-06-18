@@ -78,6 +78,7 @@ ro.config.low_ram=true
 ro.config.max_starting_bg=8
 ro.bluetooth.hfp.ver=1.6
 dalvik.vm.dex2oat-threads=4
+dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-swap=false
 dalvik.vm.checkjni=false
 ro.config.alarm_alert=Oxygen.ogg
